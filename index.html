@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image App - Draft</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+          <div class=""  style="float:right;">
+                <div id="canvasSizer">
+                    <canvas id="canvas" width="800" height="450">
+                        Canvas not supported in your browser!
+                    </canvas>
+                    <div id="canvas-drop-area"></div>
+                </div>
+                <textarea id="text-input"></textarea><br />
+                <button id="btnCopy">Burn Image</button>
+            </div>
+            <div class="img-container">
+                <h4>Upload Image</h4>                             
+                <ul id="image-list">   
+                    <input type="file" id="files" name="files[]" multiple />   
+                    <div id="firstDiv"><li><img src="img/Christmas-Cake.jpg" class="draggable-image"></li></div>
+                    <li><img src="img/Gingerbread-House.jpg" class="draggable-image"></li>
+                    <li><img src="img/Gingerbread.jpg" class="draggable-image"></li>
+                    <li><img src="img/Panettone.jpg" class="draggable-image"></li>
+                    <li><img src="img/Pavlova.jpg" class="draggable-image"></li>
+                </ul>
+            </div>
+           
+            <div class="">
+                <div id="secondDiv"></div>
+            </div>
+        </div>
+        <script src="js/html2canvas.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            // $("#btnCopy").on("click",function(){
+            //     var $img = $("#firstDiv").clone();
+            //         $("#secondDiv").append($img);
+            // });
+        </script>
+    </body>
+</html>
+
